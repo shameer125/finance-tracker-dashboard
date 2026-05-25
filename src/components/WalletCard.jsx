@@ -45,7 +45,8 @@ export default function WalletCard({ id, name, type, balance, number, color = 'i
       <div className="absolute -right-10 -bottom-10 w-40 h-40 bg-white/5 rounded-full blur-2xl group-hover:scale-125 transition-transform duration-700" />
       
       {/* Background Icon */}
-      <div className="absolute right-6 top-6 opacity-10 group-hover:opacity-20 transition-opacity duration-300 pointer-events-none">
+      <div className="absolute right-6 top-6 opacity-10 group-hover:opacity-20 transition-opacity 
+      duration-300 pointer-events-none">
         {type === 'Credit Card' ? (
           <CreditCard className="w-24 h-24 stroke-[1]" />
         ) : (
@@ -67,7 +68,8 @@ export default function WalletCard({ id, name, type, balance, number, color = 'i
           {onDelete && (
             <button
               onClick={handleDelete}
-              className="p-1.5 rounded-lg bg-black/10 hover:bg-rose-600/30 border border-white/10 hover:border-rose-500/20 text-white opacity-0 group-hover:opacity-100 transition-all active:scale-90"
+              className="p-1.5 rounded-lg bg-black/10 hover:bg-rose-600/30 border 
+              border-white/10 hover:border-rose-500/20 text-white opacity-0 group-hover:opacity-100 transition-all active:scale-90"
               title="Delete Wallet"
             >
               <Trash2 className="w-3.5 h-3.5" />
@@ -92,7 +94,8 @@ export default function WalletCard({ id, name, type, balance, number, color = 'i
       </div>
 
       {/* Bottom details */}
-      <div className="flex items-end justify-between relative z-10 border-t border-white/10 pt-3">
+      <div className="flex items-end justify-between relative z-10 border-t 
+      border-white/10 pt-3">
         <div>
           <span className={`text-[8px] uppercase tracking-wider block ${secondaryText}`}>
             Card Holder
