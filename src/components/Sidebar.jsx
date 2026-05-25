@@ -28,19 +28,22 @@ export default function Sidebar() {
     <motion.div 
       animate={{ width: isCollapsed ? 80 : 260 }}
       transition={{ type: 'spring', stiffness: 300, damping: 30 }}
-      className="hidden md:flex flex-col h-screen sticky top-0 glass-panel border-r border-slate-200 dark:border-slate-800 bg-white/70 dark:bg-slate-900/60 z-30 shrink-0"
+      className="hidden md:flex flex-col h-screen sticky top-0 glass-panel 
+      border-r border-slate-200 dark:border-slate-800 bg-white/70 dark:bg-slate-900/60 z-30 shrink-0"
     >
       {/* Logo Area */}
       <div className="p-6 flex items-center justify-between border-b border-slate-100 dark:border-slate-800/60">
         <div className="flex items-center gap-3 overflow-hidden">
-          <div className="p-2.5 bg-gradient-to-tr from-indigo-500 to-violet-600 rounded-2xl flex items-center justify-center shadow-lg shadow-indigo-500/20 shrink-0">
+          <div className="p-2.5 bg-gradient-to-tr from-indigo-500 to-violet-600 
+          rounded-2xl flex items-center justify-center shadow-lg shadow-indigo-500/20 shrink-0">
             <TrendingUp className="w-5 h-5 text-white animate-pulse" />
           </div>
           {!isCollapsed && (
             <motion.span 
               initial={{ opacity: 0, x: -10 }}
               animate={{ opacity: 1, x: 0 }}
-              className="text-lg font-extrabold bg-gradient-to-r from-slate-900 to-indigo-950 dark:from-white dark:to-indigo-300 bg-clip-text text-transparent tracking-tight shrink-0"
+              className="text-lg font-extrabold bg-gradient-to-r from-slate-900 to-indigo-950 
+              dark:from-white dark:to-indigo-300 bg-clip-text text-transparent tracking-tight shrink-0"
             >
               FinSaaS
             </motion.span>
