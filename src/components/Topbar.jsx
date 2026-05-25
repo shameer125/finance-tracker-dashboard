@@ -43,13 +43,15 @@ export default function Topbar() {
   const unreadCount = notifications.filter(n => !n.read).length;
 
   return (
-    <header className="sticky top-0 w-full glass-panel border-0 border-b border-slate-200/40 dark:border-slate-850/30 z-40 px-6 py-4 flex items-center justify-between">
+    <header className="sticky top-0 w-full glass-panel border-0 border-b 
+    border-slate-200/40 dark:border-slate-850/30 z-40 px-6 py-4 flex items-center justify-between">
       
       {/* Page Title & Breadcrumbs (desktop) or Mobile Menu Trigger */}
       <div className="flex items-center gap-3">
         <button 
           onClick={() => setMobileMenuOpen(true)}
-          className="md:hidden p-2 rounded-xl border border-slate-200 dark:border-slate-800 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors text-slate-700 dark:text-slate-200"
+          className="md:hidden p-2 rounded-xl border border-slate-200 
+          dark:border-slate-800 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors text-slate-700 dark:text-slate-200"
         >
           <Menu className="w-5 h-5" />
         </button>
