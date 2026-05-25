@@ -61,12 +61,15 @@ export default function Card({ title, value, icon: Icon, trend, trendType, color
   const selectedColor = colorMap[color] || colorMap.indigo;
 
   return (
-    <div className={`glass-card p-6 rounded-3xl relative overflow-hidden flex flex-col justify-between min-h-[140px]`}>
+    <div className={`glass-card p-6 rounded-3xl relative overflow-hidden flex flex-col 
+    justify-between min-h-[140px]`}>
       {/* Light glow pattern inside cards */}
-      <div className="absolute -top-10 -right-10 w-24 h-24 bg-indigo-500/5 rounded-full blur-xl pointer-events-none" />
+      <div className="absolute -top-10 -right-10 w-24 h-24 bg-indigo-500/5 rounded-full 
+      blur-xl pointer-events-none" />
       
       <div className="flex items-center justify-between mb-4">
-        <span className="text-sm font-medium text-slate-500 dark:text-slate-400">{title}</span>
+        <span className="text-sm font-medium text-slate-500 dark:text-slate-400">
+          {title}</span>
         <div className={`p-2.5 rounded-2xl ${selectedColor.iconBg}`}>
           <Icon className="w-5 h-5" />
         </div>
