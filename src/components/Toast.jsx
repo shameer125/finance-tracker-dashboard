@@ -13,7 +13,8 @@ export default function ToastContainer() {
   const { toasts, removeToast } = useFinance();
 
   return (
-    <div className="fixed bottom-5 right-5 z-50 flex flex-col gap-3 max-w-sm w-full pointer-events-none">
+    <div className="fixed bottom-5 right-5 z-50 flex flex-col gap-3 max-w-sm 
+    w-full pointer-events-none">
       <AnimatePresence>
         {toasts.map(toast => {
           let Icon = Info;
@@ -38,7 +39,8 @@ export default function ToastContainer() {
               initial="initial"
               animate="animate"
               exit="exit"
-              className={`pointer-events-auto flex items-center justify-between p-4 rounded-2xl border backdrop-blur-xl shadow-lg ${colorClass}`}
+              className={`pointer-events-auto flex items-center justify-between p-4 
+              rounded-2xl border backdrop-blur-xl shadow-lg ${colorClass}`}
             >
               <div className="flex items-center gap-3">
                 <Icon className={`w-5 h-5 shrink-0 ${iconColor}`} />
@@ -46,7 +48,8 @@ export default function ToastContainer() {
               </div>
               <button
                 onClick={() => removeToast(toast.id)}
-                className="ml-4 p-1 hover:bg-black/5 dark:hover:bg-white/10 rounded-full transition-colors"
+                className="ml-4 p-1 hover:bg-black/5 dark:hover:bg-white/10 
+                rounded-full transition-colors"
               >
                 <X className="w-4 h-4 opacity-70" />
               </button>
