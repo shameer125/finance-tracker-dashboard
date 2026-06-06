@@ -65,14 +65,18 @@ export default function Topbar() {
       </div>
 
       {/* Global Search Bar (UI only) */}
-      <div className="hidden lg:flex items-center gap-2 bg-slate-100 dark:bg-slate-950/60 border border-slate-200/60 dark:border-slate-800 px-3.5 py-2 rounded-2xl w-80 group focus-within:ring-2 focus-within:ring-indigo-500/20 focus-within:border-indigo-500 transition-all">
+      <div className="hidden lg:flex items-center gap-2 bg-slate-100 dark:bg-slate-950/60 border border-slate-200/60 
+      dark:border-slate-800 px-3.5 py-2 rounded-2xl w-80 group focus-within:ring-2 focus-within:ring-indigo-500/20 focus-within:border-indigo-500
+      transition-all">
         <Search className="w-4 h-4 text-slate-400 group-focus-within:text-indigo-500 transition-colors" />
         <input 
           type="text" 
           placeholder="Search transaction, wallet, help..." 
-          className="bg-transparent text-xs w-full focus:outline-none focus:ring-0 focus:box-shadow-none border-0 text-slate-700 dark:text-slate-200 placeholder-slate-400"
+          className="bg-transparent text-xs w-full focus:outline-none focus:ring-0 focus:box-shadow-none border-0 text-slate-700 dark:text-slate-200 
+          placeholder-slate-400"
         />
-        <kbd className="hidden sm:inline-block px-1.5 py-0.5 text-[9px] font-medium text-slate-400 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded shadow-sm">
+        <kbd className="hidden sm:inline-block px-1.5 py-0.5 text-[9px] font-medium text-slate-400 bg-white dark:bg-slate-800 border 
+        border-slate-200 dark:border-slate-700 rounded shadow-sm">
           ⌘K
         </kbd>
       </div>
