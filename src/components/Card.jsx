@@ -93,7 +93,10 @@ export default function Card({ title, value, icon: Icon, trend, trendType, color
             <span className="text-xs text-slate-400 dark:text-slate-500">vs last month</span>
           </div>
         )}
+        
       </div>
+
     </div>
+
   );
 }
