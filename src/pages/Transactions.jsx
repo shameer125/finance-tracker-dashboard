@@ -103,7 +103,10 @@ export default function Transactions() {
         
         <button 
           onClick={handleDownloadCSV}
-          className="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:bg-slate-200 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-200 font-semibold text-xs rounded-xl active:scale-95 transition-all cursor-pointer shadow-sm self-start sm:self-center"
+          className="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-slate-100 dark:bg-slate-900 
+          border border-slate-200 dark:border-slate-800 hover:bg-slate-200 dark:hover:bg-slate-800 text-slate-700 
+          dark:text-slate-200 font-semibold text-xs rounded-xl active:scale-95 transition-all cursor-pointer shadow-sm 
+          self-start sm:self-center"
         >
           <Download className="w-4 h-4" />
           Export CSV
