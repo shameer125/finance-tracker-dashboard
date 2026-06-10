@@ -198,7 +198,8 @@ export default function Dashboard() {
   const CustomTooltip = ({ active, payload, label }) => {
     if (active && payload && payload.length) {
       return (
-        <div className="glass-panel p-3.5 rounded-2xl border border-slate-200 dark:border-slate-800 text-xs shadow-xl bg-white/95 dark:bg-slate-950/95">
+        <div className="glass-panel p-3.5 rounded-2xl border border-slate-200 dark:border-slate-800 
+        text-xs shadow-xl bg-white/95 dark:bg-slate-950/95">
           <p className="font-bold text-slate-800 dark:text-slate-200 mb-1">{label}</p>
           {payload.map((pld, index) => (
             <p key={index} className="font-semibold" style={{ color: pld.stroke || pld.fill }}>
@@ -277,14 +278,16 @@ export default function Dashboard() {
       className="space-y-6"
     >
       {/* Dynamic Filter Tab bar */}
-      <div className="flex items-center justify-between bg-white/40 dark:bg-slate-950/20 p-2.5 rounded-2xl border border-slate-200/50 dark:border-slate-800/40 backdrop-blur-md">
+      <div className="flex items-center justify-between bg-white/40 dark:bg-slate-950/20 
+      p-2.5 rounded-2xl border border-slate-200/50 dark:border-slate-800/40 backdrop-blur-md">
         <span className="text-xs font-semibold text-slate-500 pl-3">Timeline Filter</span>
         <div className="flex gap-1.5">
           {['7D', '30D', 'ALL'].map((r) => (
             <button
               key={r}
               onClick={() => setTimeRange(r)}
-              className={`text-[10px] px-3.5 py-1.5 font-bold uppercase tracking-wider rounded-xl cursor-pointer transition-all ${
+              className={`text-[10px] px-3.5 py-1.5 font-bold uppercase tracking-wider rounded-xl cursor-pointer 
+                transition-all ${
                 timeRange === r 
                   ? 'bg-indigo-500 text-white shadow shadow-indigo-500/20' 
                   : 'text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-900/40 hover:text-slate-800'
@@ -336,7 +339,8 @@ export default function Dashboard() {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         
         {/* Cash Flow Line Chart */}
-        <motion.div variants={itemVariants} className="glass-card p-6 rounded-3xl lg:col-span-2 flex flex-col justify-between">
+        <motion.div variants={itemVariants} className="glass-card p-6 rounded-3xl lg:col-span-2 flex flex-col 
+        justify-between">
           <div className="flex items-center justify-between mb-6">
             <div>
               <h3 className="font-bold text-slate-800 dark:text-white text-base">Cash Flow Trend</h3>
