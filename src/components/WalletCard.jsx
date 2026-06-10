@@ -38,11 +38,14 @@ export default function WalletCard({ id, name, type, balance, number, color = 'i
     <motion.div
       whileHover={{ y: -8, scale: 1.02 }}
       transition={{ type: 'spring', stiffness: 400, damping: 25 }}
-      className={`relative w-full aspect-[1.58/1] rounded-[28px] bg-gradient-to-br ${selectedTheme} p-6 flex flex-col justify-between overflow-hidden shadow-2xl group cursor-pointer`}
+      className={`relative w-full aspect-[1.58/1] rounded-[28px] bg-gradient-to-br ${selectedTheme} p-6 flex flex-col
+      justify-between overflow-hidden shadow-2xl group cursor-pointer`}
     >
       {/* Visual background details */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(255,255,255,0.1),transparent_60%)] pointer-events-none" />
-      <div className="absolute -right-10 -bottom-10 w-40 h-40 bg-white/5 rounded-full blur-2xl group-hover:scale-125 transition-transform duration-700" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(255,255,255,0.1),transparent_60%)]
+      pointer-events-none" />
+      <div className="absolute -right-10 -bottom-10 w-40 h-40 bg-white/5 rounded-full blur-2xl group-hover:scale-125 
+      transition-transform duration-700" />
       
       {/* Background Icon */}
       <div className="absolute right-6 top-6 opacity-10 group-hover:opacity-20 transition-opacity 
