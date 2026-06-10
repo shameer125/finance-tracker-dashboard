@@ -79,7 +79,8 @@ export default function WalletCard({ id, name, type, balance, number, color = 'i
             </button>
           )}
 
-          <div className="w-10 h-7 rounded-lg bg-amber-400/20 border border-amber-300/30 flex items-center justify-center overflow-hidden shrink-0 pointer-events-none">
+          <div className="w-10 h-7 rounded-lg bg-amber-400/20 border border-amber-300/30 flex items-center
+          justify-center overflow-hidden shrink-0 pointer-events-none">
             <div className="w-6 h-4 bg-amber-400/30 rounded border border-amber-300/40 relative">
               <div className="absolute top-1/2 left-0 right-0 h-[1px] bg-amber-400/50" />
               <div className="absolute left-1/2 top-0 bottom-0 w-[1px] bg-amber-400/50" />
