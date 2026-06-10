@@ -46,17 +46,21 @@ export default function Settings() {
     >
       {/* Title */}
       <div>
-        <h2 className="text-xl font-bold text-slate-800 dark:text-white">Account Settings</h2>
-        <p className="text-xs text-slate-400">Configure your profile details and notifications settings</p>
+        <h2 className="text-xl font-bold text-slate-800 dark:text-white">
+          Account Settings</h2>
+        <p className="text-xs text-slate-400">Configure your profile details and
+          notifications settings</p>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         
         {/* Left Side: Profile Card Form */}
         <div className="glass-card p-6 rounded-3xl lg:col-span-2">
-          <div className="flex items-center gap-3 mb-6 border-b border-slate-100 dark:border-slate-800/80 pb-4">
+          <div className="flex items-center gap-3 mb-6 border-b border-slate-100 
+          dark:border-slate-800/80 pb-4">
             <User className="w-5 h-5 text-indigo-500" />
-            <h3 className="font-bold text-slate-800 dark:text-white text-base">Profile Customization</h3>
+            <h3 className="font-bold text-slate-800 dark:text-white text-base">
+              Profile Customization</h3>
           </div>
 
           <form onSubmit={handleProfileSubmit} className="space-y-5">
