@@ -99,8 +99,10 @@ export default function Analytics() {
     >
       {/* Title */}
       <div>
-        <h2 className="text-xl font-bold text-slate-800 dark:text-white">Financial Analytics</h2>
-        <p className="text-xs text-slate-400">Deep dive insights and category budget trackings</p>
+        <h2 className="text-xl font-bold text-slate-800 dark:text-white">
+          Financial Analytics</h2>
+        <p className="text-xs text-slate-400">Deep dive insights and category
+          budget trackings</p>
       </div>
 
       {/* Row 1: Insights Cards */}
