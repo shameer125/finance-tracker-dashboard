@@ -114,9 +114,12 @@ export default function Transactions() {
       </div>
 
       {/* Filters */}
-      <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 bg-white/40 dark:bg-slate-950/20 p-4 rounded-3xl border border-slate-200/50 dark:border-slate-800/60 backdrop-blur-md">
+      <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 bg-white/40 dark:bg-slate-950/20 
+      p-4 rounded-3xl border border-slate-200/50 dark:border-slate-800/60 backdrop-blur-md">
         
-        <div className="flex items-center gap-2 bg-slate-100 dark:bg-slate-900/60 border border-slate-200/60 dark:border-slate-800 px-3 py-2 rounded-2xl w-full md:w-72 focus-within:ring-2 focus-within:ring-indigo-500/20 focus-within:border-indigo-500 transition-all">
+        <div className="flex items-center gap-2 bg-slate-100 dark:bg-slate-900/60 border border-slate-200/60 
+        dark:border-slate-800 px-3 py-2 rounded-2xl w-full md:w-72 focus-within:ring-2 focus-within:ring-indigo-500/20
+        focus-within:border-indigo-500 transition-all">
           <Search className="w-4 h-4 text-slate-400" />
           <input 
             type="text" 
@@ -126,7 +129,8 @@ export default function Transactions() {
               setCurrentPage(1);
             }}
             placeholder="Search details, merchant..." 
-            className="bg-transparent text-xs w-full focus:outline-none border-none text-slate-800 dark:text-slate-200 placeholder-slate-400"
+            className="bg-transparent text-xs w-full focus:outline-none border-none text-slate-800 
+            dark:text-slate-200 placeholder-slate-400"
           />
         </div>
 
