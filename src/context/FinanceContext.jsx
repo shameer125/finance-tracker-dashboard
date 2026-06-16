@@ -248,6 +248,7 @@ export const FinanceProvider = ({ children }) => {
     }));
 
     // Log as a transaction
+    
     addTransaction({
       title: `Saved for ${goalName}`,
       amount: amount,
@@ -260,6 +261,7 @@ export const FinanceProvider = ({ children }) => {
     showToast(`Allocated $${amount} to "${goalName}"!`, 'success');
     return goalCompleted; // lets visual components know to fire special effects
   };
+
 
   const updateBudget = (category, amount) => {
     setCategoryBudgets(prev => ({
@@ -321,6 +323,7 @@ export const FinanceProvider = ({ children }) => {
       totalBalance,
       savings,
     }}>
+
       {children}
     </FinanceContext.Provider>
   );
