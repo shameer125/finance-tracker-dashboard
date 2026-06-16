@@ -90,7 +90,9 @@ export default function Wallets() {
           {wallets.length >= 2 && (
             <button 
               onClick={() => setTransferModalOpen(true)}
-              className="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:bg-slate-200 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-200 font-semibold text-xs rounded-xl active:scale-95 transition-all cursor-pointer shadow-sm"
+              className="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-slate-100 dark:bg-slate-900 
+              border border-slate-200 dark:border-slate-800 hover:bg-slate-200 dark:hover:bg-slate-800 text-slate-700 
+              dark:text-slate-200 font-semibold text-xs rounded-xl active:scale-95 transition-all cursor-pointer shadow-sm"
             >
               <ArrowRightLeft className="w-4 h-4" />
               Transfer Funds
@@ -99,7 +101,9 @@ export default function Wallets() {
 
           <button 
             onClick={() => setModalOpen(true)}
-            className="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-gradient-to-r from-indigo-500 to-violet-600 hover:from-indigo-600 hover:to-violet-700 text-white font-semibold text-xs rounded-xl active:scale-95 transition-all cursor-pointer shadow-lg shadow-indigo-500/20"
+            className="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-gradient-to-r from-indigo-500 
+            to-violet-600 hover:from-indigo-600 hover:to-violet-700 text-white font-semibold text-xs rounded-xl 
+            active:scale-95 transition-all cursor-pointer shadow-lg shadow-indigo-500/20"
           >
             <Plus className="w-4 h-4" />
             Add Wallet
