@@ -35,8 +35,6 @@ src/
 │── assets/
 │── components/
 │── pages/
-│── hooks/
-│── utils/
 │── data/
 │── App.tsx
 │── main.tsx
@@ -59,7 +57,7 @@ images/dashboard.png
 Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/finance-tracker-dashboard.git
+git clone https://github.com/shameer125/finance-tracker-dashboard.git
 ```
 
 Navigate to the project
