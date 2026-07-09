@@ -24,7 +24,7 @@ A modern and responsive Finance Tracker Dashboard built with **React**, **TypeSc
 - Vite
 - Chart.js
 - React Chart.js 2
-- CSS / Tailwind CSS *(Replace with your styling library)*
+- CSS / Tailwind CSS 
 
 ---
 
@@ -35,19 +35,10 @@ src/
 │── assets/
 │── components/
 │── pages/
+│── content/
 │── data/
 │── App.tsx
 │── main.tsx
-```
-
----
-
-## 📸 Dashboard Preview
-
-> Add screenshots or GIFs here.
-
-```
-images/dashboard.png
 ```
 
 ---
