@@ -48,7 +48,7 @@ src/
 Clone the repository
 
 ```bash
-git clone https://github.com/shameer125/finance-tracker-dashboard.git
+git clone https://github.com/shameercodes/finance-tracker-dashboard.git
 ```
 
 Navigate to the project
